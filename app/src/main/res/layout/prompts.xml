@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/webView"></WebView>
+
+    <SearchView
+        android:id="@+id/editTextDialogUserInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text" >
+        <requestFocus />
+    </SearchView>
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fastScrollEnabled="true"
+        android:scrollbarStyle="insideInset"
+        android:textFilterEnabled="false"
+        android:divider="#FFCC00"
+        android:dividerHeight="4px"
+        android:layout_margin="0dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="22dp"/>
+
+</LinearLayout>
